@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Rutas from './components/Rutas';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BaseHeader />
+      <Container>
+        <Header />
+        <Rutas />
+        <Footer />
+        <WhiteLinea />
+      </Container>
+        
+    </>
   );
 }
 
+const BaseHeader = styled.div`
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: white;
+    width: 390px;
+    height: 170px;
+    margin:auto;
+
+    @media screen and (min-width: 750px){
+        width:750px;
+        height: 280px;
+    }
+`
+const Container = styled.div`
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    width: 390px;
+    height: auto;
+    margin:auto;
+
+    @media screen and (min-width: 750px){
+        width:750px;
+    }
+`
+
+export const WhiteLinea = styled.hr`
+  color: white;
+  height:3px;
+  margin: auto;
+  width: 100%;
+`;
+
 export default App;
+
