@@ -28,6 +28,11 @@ export const FooterContainer = styled.div`
     height: 90px;
     justify-content: space-evenly;
   }
+  @media screen and (min-width: 1300px) {
+    width: 1300px;
+    height: 150px;
+    justify-content: space-evenly;
+  }
 `;
 export const FooterLogo = styled.div`
   display: flex;
@@ -36,6 +41,9 @@ export const FooterLogo = styled.div`
     width: 150px;
     @media screen and (min-width: 750px) {
       width: 200px;
+    }
+    @media screen and (min-width: 1300px) {
+      width: 300px;
     }
   }
 `;

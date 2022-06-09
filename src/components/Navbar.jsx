@@ -6,18 +6,98 @@ const Navbar = () => {
   return (
     <Navegacion>
       <Menu>
-        <TabLi>
-          <Link to="/">Home</Link>
-        </TabLi>
-        <TabLi>
-          <Link to="/services">Services</Link>
-        </TabLi>
-        <TabLi>
-          <Link to="/about">About</Link>
-        </TabLi>
-        <TabLi>
-          <Link to="/contact">Contact</Link>
-        </TabLi>
+        <MenuLi>
+          <MenuLink>
+            <Link to="/">Home</Link>
+          </MenuLink>
+        </MenuLi>
+
+        <MenuLi>
+          <MenuLink>Services</MenuLink>
+          <SubMenu>
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/info">Info</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/rates">Rates</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/individual">Individual</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/couples">Couples</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/telehealth">Telehealth</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/polices">Polices</Link>
+              </SubLink>
+            </SubMenuLi>
+          </SubMenu>
+        </MenuLi>
+
+        <MenuLi>
+          <MenuLink>About</MenuLink>
+          <SubMenu>
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/bio">Bio</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/credentials">Credentials</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/education">Education</Link>
+              </SubLink>
+            </SubMenuLi>
+          </SubMenu>
+        </MenuLi>
+
+        <MenuLi>
+          <MenuLink>Contact</MenuLink>
+          <SubMenu>
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/getintouch">Get in Touch</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/location">Location</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/faqs">FAQs</Link>
+              </SubLink>
+            </SubMenuLi>
+          </SubMenu>
+        </MenuLi>
       </Menu>
     </Navegacion>
   );
@@ -25,50 +105,106 @@ const Navbar = () => {
 
 export const Navegacion = styled.nav`
   background-color: #4d004d;
-  color: white;
   width: 390px;
-  height: 45px;
   margin: auto;
+  padding-left: 20px;
+
+  ul:hover a {
+    color: white;
+  }
 
   @media screen and (min-width: 750px) {
     width: 750px;
-    height: 49px;
+  }
+  @media screen and (min-width: 1300px) {
+    width: 1300px;
   }
 `;
-
 export const Menu = styled.ul`
-  list-style: none;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 
-  li:hover {
-    background-color: #606668;
-    border-bottom: 2px solid #10103c;
-    text-decoration: underline;
-    height: 50px;
-
-    @media screen and (min-width: 750px) {
-      height: 54px;
-    }
+  li:hover ul {
+    border: 1px solid black;
+    display: block;
+    transition: all 0.3s ease;
   }
 
-  a {
+  li:hover a {
     text-decoration: none;
-    color: white;
-    font-size: 26px;
-    font-weight: 100;
-
-    @media screen and (min-width: 750px) {
-      font-size: 29px;
-    }
   }
 `;
-
-export const TabLi = styled.li`
+export const SubMenu = styled.ul`
+  background-color: #4d004d;
+  position: absolute;
+  display: none;
+  width: 100%;
+  list-style: none;
+  color: white;
+`;
+export const MenuLi = styled.li`
+  display: inline-block;
+  position: relative;
+  text-align: left;
   width: 25%;
-  display: flex;
-  justify-content: space-around;
+
+  @media screen and (min-width: 750px) {
+    /* width: 750px; */
+  }
+  @media screen and (min-width: 1300px) {
+    width: 15%;
+  }
+
+  a:hover {
+    background-color: #606668;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  ul:hover a {
+    color: white;
+  }
+`;
+export const SubMenuLi = styled.li`
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-top: 0.1px solid rgb(227, 202, 174);
+
+  a:hover a {
+    /* color: black; */
+    color: white;
+  }
+`;
+export const MenuLink = styled.a`
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  padding: 7px;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 750px) {
+    text-align: center;
+    font-size: 21px;
+    padding: 8px;
+    font-family: sans-serif;
+  }
+`;
+export const SubLink = styled.a`
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding: 8px;
+
+  @media screen and (min-width: 750px) {
+    padding: 9px;
+    font-size: 21px;
+    text-align: center;
+    height: 45px;
+  }
 `;
 
 export default Navbar;
