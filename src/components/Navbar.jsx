@@ -41,6 +41,12 @@ const Navbar = () => {
 
             <SubMenuLi>
               <SubLink>
+                <Link to="/couples">Family</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
                 <Link to="/telehealth">Telehealth</Link>
               </SubLink>
             </SubMenuLi>
@@ -65,12 +71,6 @@ const Navbar = () => {
             <SubMenuLi>
               <SubLink>
                 <Link to="/credentials">Credentials</Link>
-              </SubLink>
-            </SubMenuLi>
-
-            <SubMenuLi>
-              <SubLink>
-                <Link to="/education">Education</Link>
               </SubLink>
             </SubMenuLi>
           </SubMenu>

@@ -8,13 +8,13 @@ import Info from "../paginas/Info";
 import Rates from "../paginas/Rates";
 import Individual from "../paginas/Individual";
 import Couples from "../paginas/Couples";
+import Family from "../paginas/Family";
 import Telehealth from "../paginas/Telehealth";
 import Polices from "../paginas/Polices";
 
 import About from "../paginas/About";
 import Bio from "../paginas/Bio";
 import Credentials from "../paginas/Credentials";
-import Education from "../paginas/Education";
 
 import Contact from "../paginas/Contact";
 import GetInTouch from "../paginas/GetInTouch";
@@ -32,13 +32,13 @@ const Rutas = () => {
         <Route path="/rates" element={<Rates />} />
         <Route path="/individual" element={<Individual />} />
         <Route path="/couples" element={<Couples />} />
+        <Route path="/family" element={<Family />} />
         <Route path="/telehealth" element={<Telehealth />} />
         <Route path="/polices" element={<Polices />} />
 
         <Route path="/about" element={<About />} />
         <Route path="/bio" element={<Bio />} />
         <Route path="/credentials" element={<Credentials />} />
-        <Route path="/education" element={<Education />} />
 
         <Route path="/contact" element={<Contact />} />
         <Route path="/getintouch" element={<GetInTouch />} />
