@@ -15,14 +15,15 @@ const Footer = () => {
 };
 
 export const FooterContainer = styled.div`
-  background-color: #4d004d;
-  color: white;
-  width: 390px;
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
+  @media screen and (min-width: 390px) {
+    background-color: #4d004d;
+    color: white;
+    width: 390px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
   @media screen and (min-width: 750px) {
     width: 750px;
     height: 90px;
@@ -35,16 +36,18 @@ export const FooterContainer = styled.div`
   }
 `;
 export const FooterLogo = styled.div`
-  display: flex;
-  img {
-    border-radius: 10px;
-    width: 150px;
-    @media screen and (min-width: 750px) {
-      width: 200px;
+  @media screen and (min-width: 390px) {
+    display: flex;
+    img {
+      border-radius: 10px;
+      width: 150px;
     }
-    @media screen and (min-width: 1300px) {
-      width: 300px;
-    }
+  }
+  @media screen and (min-width: 750px) {
+    width: 200px;
+  }
+  @media screen and (min-width: 1300px) {
+    width: 300px;
   }
 `;
 export const FooterText = styled.div`

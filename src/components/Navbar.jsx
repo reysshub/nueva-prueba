@@ -41,7 +41,7 @@ const Navbar = () => {
 
             <SubMenuLi>
               <SubLink>
-                <Link to="/couples">Family</Link>
+                <Link to="/Family">Family</Link>
               </SubLink>
             </SubMenuLi>
 
@@ -104,15 +104,16 @@ const Navbar = () => {
 };
 
 export const Navegacion = styled.nav`
-  background-color: #4d004d;
-  width: 390px;
-  margin: auto;
-  padding-left: 20px;
+  @media screen and (min-width: 390px) {
+    background-color: #4d004d;
+    width: 390px;
+    margin: auto;
+    padding-left: 20px;
 
-  ul:hover a {
-    color: white;
+    ul:hover a {
+      color: white;
+    }
   }
-
   @media screen and (min-width: 750px) {
     width: 750px;
   }
@@ -143,11 +144,12 @@ export const SubMenu = styled.ul`
   color: white;
 `;
 export const MenuLi = styled.li`
-  display: inline-block;
-  position: relative;
-  text-align: left;
-  width: 25%;
-
+  @media screen and (min-width: 390px) {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 25%;
+  }
   @media screen and (min-width: 750px) {
     /* width: 750px; */
   }
@@ -175,17 +177,18 @@ export const SubMenuLi = styled.li`
   }
 `;
 export const MenuLink = styled.a`
-  text-align: left;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-  padding: 7px;
-  color: white;
-  a {
-    color: white;
+  @media screen and (min-width: 390px) {
+    text-align: left;
     text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding: 7px;
+    color: white;
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
-
   @media screen and (min-width: 750px) {
     text-align: center;
     font-size: 21px;

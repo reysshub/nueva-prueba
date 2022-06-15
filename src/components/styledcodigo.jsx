@@ -6,59 +6,64 @@ const CardCodigo = () => {
 };
 
 export const TarjetaBlanca = styled.div`
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  background-color: white;
-  border-radius: 10px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 95%;
-  height: auto;
-
+  @media screen and (min-width: 390px) {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 95%;
+    height: auto;
+  }
   @media screen and (min-width: 750px) {
     width: 97%;
   }
 `;
 // TITULOS DISPONIBLES
 export const TituloGrande = styled.h2`
-  font-family: "Oswald";
-  text-align: center;
-  font-size: 32px;
-  color: darkblue;
-
+  @media screen and (min-width: 390px) {
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 32px;
+    color: darkblue;
+  }
   @media screen and (min-width: 750px) {
     font-size: 40px;
   }
 `;
 export const TituloMedio = styled.h2`
-  font-family: "Oswald";
-  font-weight: 600;
-  text-align: center;
-  font-size: 20px;
-  color: darkblue;
-
+  @media screen and (min-width: 390px) {
+    font-family: "Oswald";
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    color: darkblue;
+  }
   @media screen and (min-width: 750px) {
     font-size: 33px;
   }
 `;
 export const TituloChico = styled.h2`
-  font-family: "Oswald";
-  font-weight: 400;
-  text-align: center;
-  font-size: 12px;
-  color: darkblue;
-
+  @media screen and (min-width: 390px) {
+    font-family: "Oswald";
+    font-weight: 400;
+    text-align: center;
+    font-size: 12px;
+    color: darkblue;
+  }
   @media screen and (min-width: 750px) {
     font-size: 23px;
   }
 `;
 export const TituloLeft = styled.h2`
-  font-family: "Oswald";
-  text-align: left;
-  font-size: 25px;
-  color: darkred;
-
+  @media screen and (min-width: 390px) {
+    font-family: "Oswald";
+    text-align: left;
+    font-size: 25px;
+    color: darkred;
+  }
   @media screen and (min-width: 750px) {
     font-size: 33px;
     padding-left: 30px;
@@ -66,28 +71,30 @@ export const TituloLeft = styled.h2`
 `;
 // PARRAFOS DISPONIBLES
 export const LetraGrande = styled.p`
-  font-family: "Oswald";
-  color: darkblue;
-  font-size: 17px;
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin: auto;
-
+  @media screen and (min-width: 390px) {
+    font-family: "Oswald";
+    color: darkblue;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: auto;
+  }
   @media screen and (min-width: 750px) {
     font-size: 25px;
   }
 `;
 export const LetraChica = styled.p`
-  font-family: "Oswald";
-  color: darkblue;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px;
+  @media screen and (min-width: 390px) {
+    font-family: "Oswald";
+    color: darkblue;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
 
-  /* display:flex;
+    /* display:flex;
   align-items:center; */
-
+  }
   @media screen and (min-width: 750px) {
     font-size: 20px;
   }
@@ -114,12 +121,13 @@ export const ImagenSombraDos = styled.div`
   }
 `;
 export const ImagenGrande = styled.div`
-  img {
-    border-radius: 10px;
-    margin-top: 5px;
-    width: 100%;
+  @media screen and (min-width: 390px) {
+    img {
+      border-radius: 10px;
+      margin-top: 5px;
+      width: 100%;
+    }
   }
-
   @media screen and (min-width: 750px) {
     display: flex;
     flex-direction: column;
@@ -140,11 +148,12 @@ export const ImagenMedia = styled.div`
   }
 `;
 export const ImagenLogo = styled.div`
-  padding: 2px;
-  img {
-    width: 70px;
+  @media screen and (min-width: 390px) {
+    padding: 2px;
+    img {
+      width: 70px;
+    }
   }
-
   @media screen and (min-width: 750px) {
     img {
       width: 115px;
@@ -162,20 +171,21 @@ export const FotoLogo = styled.div`
 
 // DIV BLANCO LARGO CON SOMBRA
 export const BlancoSombra = styled.div`
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 10px;
-  text-align: center;
-  color: darkblue;
-  margin-top: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
-  gap: 16px;
+  @media screen and (min-width: 390px) {
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.19),
+      0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    text-align: center;
+    color: darkblue;
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 16px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   @media screen and (min-width: 750px) {
     font-size: 20px;
     justify-content: space-around;
@@ -183,21 +193,22 @@ export const BlancoSombra = styled.div`
 `;
 // DIV BLANCO CORTO CON SOMBRA
 export const BlancoSombraCorto = styled.div`
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 10px;
-  text-align: center;
-  color: darkblue;
-  margin-top: 12px;
-  margin: auto;
-  padding: 6px;
-  width: 30%;
-  gap: 16px;
+  @media screen and (min-width: 390px) {
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.19),
+      0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    text-align: center;
+    color: darkblue;
+    margin-top: 12px;
+    margin: auto;
+    padding: 6px;
+    width: 30%;
+    gap: 16px;
 
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
   @media screen and (min-width: 750px) {
     font-size: 20px;
     width: 40%;
@@ -211,16 +222,17 @@ export const CajaBotones = styled.div`
   align-items: center;
 `;
 export const Boton = styled.button`
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  background-color: white;
-  border-radius: 10px;
-  padding: 10px 15px;
-  color: darkblue;
-  font-size: 16px;
-  height: 40px;
-  margin: auto;
-  width: 70%;
-
+  @media screen and (min-width: 390px) {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: darkblue;
+    font-size: 16px;
+    height: 40px;
+    margin: auto;
+    width: 70%;
+  }
   @media screen and (min-width: 750px) {
     padding: 20px 30px;
     font-size: 20px;
@@ -277,9 +289,10 @@ export const ColorBlue = styled.p`
 
 //LINK QUE SUSTITUYE A LA a
 export const ConexionWeb = styled.a`
-  /* text-decoration:none; */
-  font-size: 15px;
-
+  @media screen and (min-width: 390px) {
+    /* text-decoration:none; */
+    font-size: 15px;
+  }
   @media screen and (min-width: 750px) {
     font-size: 22px;
   }

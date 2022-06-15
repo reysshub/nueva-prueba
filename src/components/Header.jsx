@@ -19,11 +19,12 @@ const Header = () => {
 
 export const Encabezado = styled.div`
   /* border: 1px dashed blueviolet; */
-  background: white;
-  position: fixed;
-  top: 0px;
-  width: 390px;
-
+  @media screen and (min-width: 390px) {
+    background: white;
+    position: fixed;
+    top: 0px;
+    width: 390px;
+  }
   @media screen and (min-width: 750px) {
     width: 750px;
     height: 212px;
@@ -35,6 +36,8 @@ export const Encabezado = styled.div`
 `;
 
 export const Heading = styled.div`
+  @media screen and (min-width: 390px) {
+  }
   @media screen and (min-width: 750px) {
   }
   @media screen and (min-width: 1300px) {
@@ -43,8 +46,10 @@ export const Heading = styled.div`
 
 export const HeaderLogo = styled.div`
   /* border: 2px dashed red; */
-  img {
-    width: 100%;
+  @media screen and (min-width: 390px) {
+    img {
+      width: 100%;
+    }
     @media screen and (min-width: 750px) {
       height: 150px;
       width: 68%;
