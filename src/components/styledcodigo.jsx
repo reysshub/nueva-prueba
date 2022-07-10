@@ -26,10 +26,14 @@ export const TituloGrande = styled.h2`
   @media screen and (min-width: 390px) {
     font-family: "Oswald";
     text-align: center;
-    font-size: 32px;
+    font-size: 20px;
+    font-weight: 200;
     color: darkblue;
   }
   @media screen and (min-width: 750px) {
+    font-size: 32px;
+  }
+  @media screen and (min-width: 1300px) {
     font-size: 40px;
   }
 `;
@@ -74,13 +78,17 @@ export const LetraGrande = styled.p`
   @media screen and (min-width: 390px) {
     font-family: "Oswald";
     color: darkblue;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: 200;
     text-align: center;
     padding-top: 8px;
     padding-bottom: 8px;
     margin: auto;
   }
   @media screen and (min-width: 750px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1300px) {
     font-size: 25px;
   }
 `;

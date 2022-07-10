@@ -23,12 +23,6 @@ const Navbar = () => {
 
             <SubMenuLi>
               <SubLink>
-                <Link to="/rates">Rates</Link>
-              </SubLink>
-            </SubMenuLi>
-
-            <SubMenuLi>
-              <SubLink>
                 <Link to="/individual">Individual</Link>
               </SubLink>
             </SubMenuLi>
@@ -42,6 +36,23 @@ const Navbar = () => {
             <SubMenuLi>
               <SubLink>
                 <Link to="/Family">Family</Link>
+              </SubLink>
+            </SubMenuLi>
+          </SubMenu>
+        </MenuLi>
+
+        <MenuLi>
+          <MenuLink>About</MenuLink>
+          <SubMenu>
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/bio">Bio</Link>
+              </SubLink>
+            </SubMenuLi>
+
+            <SubMenuLi>
+              <SubLink>
+                <Link to="/rates">Rates</Link>
               </SubLink>
             </SubMenuLi>
 
@@ -60,25 +71,14 @@ const Navbar = () => {
         </MenuLi>
 
         <MenuLi>
-          <MenuLink>About</MenuLink>
+          <MenuLink>Contact</MenuLink>
           <SubMenu>
-            <SubMenuLi>
-              <SubLink>
-                <Link to="/bio">Bio</Link>
-              </SubLink>
-            </SubMenuLi>
-
             <SubMenuLi>
               <SubLink>
                 <Link to="/credentials">Credentials</Link>
               </SubLink>
             </SubMenuLi>
-          </SubMenu>
-        </MenuLi>
 
-        <MenuLi>
-          <MenuLink>Contact</MenuLink>
-          <SubMenu>
             <SubMenuLi>
               <SubLink>
                 <Link to="/getintouch">Get in Touch</Link>

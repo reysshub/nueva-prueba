@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Rutas from "./components/Rutas";
+import "./App.css";
 
 const App = () => {
   return (
@@ -18,23 +19,25 @@ const App = () => {
 };
 
 const BaseHeader = styled.div`
+  /* border: 1px solid blue; */
   @media screen and (min-width: 390px) {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    background-color: white;
+    background-color: #fcfafa;
     width: 390px;
-    height: 170px;
+    height: 118px;
     margin: auto;
   }
   @media screen and (min-width: 750px) {
     width: 750px;
-    height: 210px;
+    height: 124px;
   }
   @media screen and (min-width: 1300px) {
     width: 1300px;
-    height: 240px;
+    height: 152px;
   }
 `;
 const Container = styled.div`
+  /* border: 1px dashed blue; */
   @media screen and (min-width: 390px) {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     background-color: white;

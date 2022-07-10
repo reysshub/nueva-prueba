@@ -1,97 +1,113 @@
-import React from "react";
-import { TituloGrande, LetraGrande, Espacio } from "../components/styledcodigo";
+import {
+  TituloGrande,
+  TituloChico,
+  LetraGrande,
+  Espacio,
+  TituloMedio,
+} from "../components/styledcodigo";
 import styled from "styled-components";
+import BotonAppointment from "../components/BotonAppointment";
 import homeheidy from "../img/homeheidy.png";
-import primero from "../img/dorys.png";
-import segundo from "../img/veronica.png";
-import tercero from "../img/heiden.png";
-import cuarto from "../img/teffy.png";
+import heidy from "../img/heidyx.png";
+import pareja from "../img/valor3.png";
+import manos from "../img/valor2.png";
+import familia from "../img/valor1.png";
 
 const Home = () => {
   return (
     <>
       <Espacio />
-      <TituloGrande>Home</TituloGrande>
-
+      <Espacio />
+      <TituloGrande>Welcome to Valor Counseling LLC</TituloGrande>
       <ContenedorHome>
         <HomeDivision1>
-          <img src={primero} alt="home imagen" />
-          <img src={segundo} alt="home imagen" />
-          <img src={tercero} alt="home imagen" />
-          <img src={cuarto} alt="home imagen" />
+          <div>
+            <img src={heidy} alt="foto heidy" />
+            <LetraGrande>
+              Heidy Castaneda
+              <TituloChico>MA, RMHCI, RMFTI</TituloChico>
+            </LetraGrande>
+          </div>
+          <LetraGrande>
+            <TituloMedio>Valor Counseling LLC</TituloMedio>
+            <TituloChico>Never Give Up</TituloChico>
+            heidycastaneda@valorcounselingllc.com <br />
+            www.valorcounselingllc.com <br />
+            (407) 212-7508 <br />
+            It is my pleasure to serve you <br />
+            Es un gran placer servirte <br />
+            English or Español
+            <Espacio />
+            <Espacio />
+            <BotonAppointment />
+          </LetraGrande>
         </HomeDivision1>
 
         <HomeDivision2>
-          <TituloGrande>Historia</TituloGrande>
-          <Parrafo>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-            laudantium veniam doloremque ratione dolore minima ad at tempore
-            voluptate nulla similique nostrum magnam quia, hic nihil illum
-            reiciendis. Ullam sint, porro officia fuga nihil at obcaecati iure?
-            Placeat incidunt molestias perferendis similique? Fuga pariatur
-            ullam sequi, quae neque eaque amet!
-          </Parrafo>
+          <LetraGrande>
+            Heidy Castaneda is Master Degree <br />
+            By Rollins College University <br />
+            in Winter Park Florida
+            <Espacio />
+            Registered Mental Health Counselor Intern <br />
+            Registered Marriage and Family Therapist Intern <br />
+            By the State of Florida, USA.
+          </LetraGrande>
+          <Espacio />
+          <Espacio />
+          <img src={homeheidy} alt="home imagen" />
         </HomeDivision2>
 
         <HomeDivision3>
-          <TituloGrande></TituloGrande>
-          <img src={homeheidy} alt="home imagen" />
+          <div>
+            <img src={pareja} alt="home imagen" />
+            <LetraGrande>
+              Valor the strength of body and mind that enables a perso to
+              respond to danger with firmness, fearlessness, courage, and
+              bravery
+            </LetraGrande>
+          </div>
+          <div>
+            <img src={manos} className="App-logo" alt="home imagen" />
+            <LetraGrande>
+              Valor the strength of body and mind that enables a perso to
+              respond to danger with firmness, fearlessness, courage, and
+              bravery.
+            </LetraGrande>
+          </div>
+          <div>
+            <img src={familia} alt="home imagen" />
+            <LetraGrande>
+              Valor the strength of body and mind that enables a perso to
+              respond to danger with firmness, fearlessness, courage, and
+              bravery.
+            </LetraGrande>
+          </div>
         </HomeDivision3>
+        <Espacio />
 
+        <Espacio />
         <HomeDivision4>
-          <TituloGrande>Frases Celebres</TituloGrande>
+          <TituloGrande></TituloGrande>
+          <Espacio />
           <Parrafo>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-            laudantium veniam doloremque ratione dolore minima ad at tempore
-            voluptate nulla similique nostrum magnam quia, hic nihil illum
-            reiciendis. Ullam sint, porro officia fuga nihil at obcaecati iure?
-            Placeat incidunt molestias perferendis similique? Fuga pariatur
-            ullam sequi, quae neque eaque amet!
+            More than just a listening ear, we are here to help you discover a
+            new perspective, identify the source of the challenges you're
+            facing, and equip you with the resources you need to overcome.
+            Beyond developing a healthier mind, we'll assess your overall
+            wellbeing, including physical and emotional wellness. Together, we
+            can work towards a healthier, happier you.
           </Parrafo>
+          <Espacio />
+          <BotonAppointment />
         </HomeDivision4>
-
-        <HomeDivision5>
-          <div>
-            <img src={primero} alt="home imagen" />
-            <LetraGrande>Dorys</LetraGrande>
-          </div>
-          <div>
-            <img src={segundo} alt="home imagen" />
-            <LetraGrande>Veronica</LetraGrande>
-          </div>
-          <div>
-            <img src={tercero} alt="home imagen" />
-            <LetraGrande>Heiden</LetraGrande>
-          </div>
-          <div>
-            <img src={cuarto} alt="home imagen" />
-            <LetraGrande>Teffy</LetraGrande>
-          </div>
-        </HomeDivision5>
-
-        <HomeDivision6>
-          <TituloGrande>Testimonio</TituloGrande>
-          <Parrafo>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quia
-            nulla veritatis modi voluptas, quo harum quibusdam sint minus nihil
-            amet alias, recusandae provident iure excepturi impedit ad. Dolores
-            dicta et labore officiis? Quo a tempore possimus omnis ex quibusdam,
-            temporibus minima. Soluta quis dolore alias sit hic possimus velit
-            earum deserunt odio cupiditate sed, itaque pariatur ab ea repellat.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quia
-            nulla veritatis modi voluptas, quo harum quibusdam sint minus nihil
-            amet alias, recusandae provident iure excepturi impedit ad. Dolores
-            dicta et labore officiis? Quo a tempore possimus omnis ex quibusdam,
-            temporibus minima.
-          </Parrafo>
-        </HomeDivision6>
       </ContenedorHome>
     </>
   );
 };
 
 export const ContenedorHome = styled.div`
-  /* border: 1px solid blue; */
+  /* border: 1px dashed blue; */
   @media screen and (min-width: 390px) {
     padding: 10px;
     margin: 10px;
@@ -102,9 +118,7 @@ export const ContenedorHome = styled.div`
       "uno"
       "dos"
       "tres"
-      "cuatro"
-      "cinco"
-      "seis";
+      "cuatro";
   }
   @media screen and (min-width: 750px) {
     /* grid-template-columns: repeat(auto-fill, 1fr); */
@@ -113,17 +127,15 @@ export const ContenedorHome = styled.div`
       "uno"
       "dos"
       "tres"
-      "cuatro"
-      "cinco"
-      "seis";
+      "cuatro";
   }
   @media screen and (min-width: 1300px) {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "uno      uno       uno"
-      "dos      tres      cuatro"
-      "cinco    cinco     cinco"
-      "seis     seis      seis";
+      "uno"
+      "dos"
+      "tres"
+      "cuatro";
   }
 `;
 
@@ -131,31 +143,37 @@ const HomeDivision1 = styled.div`
   grid-area: uno;
   @media screen and (min-width: 390px) {
     width: 350px;
-    padding-bottom: 20px;
+    margin-bottom: 40px;
+    padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 20px;
+
+    div {
+      margin: auto;
+    }
 
     img {
-      /* border: 1px solid blue; */
-      padding: 5px;
-      width: 22%;
+      box-shadow: 0 3px 13px 1px rgb(0 0 0 / 16%);
+      padding: 2px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
   }
   @media screen and (min-width: 750px) {
     width: 710px;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
 
     img {
-      width: 140px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
-      /* border: 1px solid darkblue; */
-      padding: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      padding: 2px;
+      box-shadow: 0 3px 13px 1px rgb(0 0 0 / 16%);
     }
   }
   @media screen and (min-width: 1300px) {
@@ -163,109 +181,72 @@ const HomeDivision1 = styled.div`
     padding: 30px;
     justify-content: space-around;
 
-    img {
-      width: 240px;
-      border-radius: 50%;
-      border: 1px solid lightblue;
-      padding: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    div {
+      padding: 5px;
     }
-  }
-`;
-const HomeDivision2 = styled.div`
-  /* border: 1px solid blue; */
-  @media screen and (min-width: 390px) {
-    width: 350px;
-    grid-area: dos;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    margin-right: 0px;
 
-    @media screen and (min-width: 750px) {
-      margin-right: 0px;
-      width: 710px;
-    }
-    @media screen and (min-width: 1300px) {
-      width: 260px;
-      /* margin-right: 10px; */
+    img {
+      box-shadow: 0 3px 13px 1px rgb(0 0 0 / 16%);
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
     }
   }
 `;
-const HomeDivision3 = styled.div`
-  /* border: 1px solid blue; */
+
+const HomeDivision2 = styled.div`
   @media screen and (min-width: 390px) {
-    grid-area: tres;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    grid-area: dos;
     width: 350px;
+    margin-bottom: 50px;
+
     img {
       width: 100%;
     }
   }
   @media screen and (min-width: 750px) {
-    margin-right: 0px;
     width: 710px;
     img {
       width: 100%;
     }
   }
   @media screen and (min-width: 1300px) {
-    width: 680px;
-    padding-top: 20px;
-    padding-right: 10px;
+    width: 1260px;
 
     img {
       width: 100%;
     }
   }
 `;
-const HomeDivision4 = styled.div`
-  /* border: 1px solid blue; */
-  @media screen and (min-width: 390px) {
-    grid-area: cuatro;
-    width: 350px;
-    margin-left: 0px;
-    margin-top: 20px;
 
-    @media screen and (min-width: 750px) {
-      margin-left: 0px;
-      width: 710px;
-    }
-    @media screen and (min-width: 1300px) {
-      width: 260px;
-      margin-left: 20px;
-    }
-  }
-`;
-const HomeDivision5 = styled.div`
-  /* border: 1px solid blue; */
+const HomeDivision3 = styled.div`
   @media screen and (min-width: 390px) {
-    grid-area: cinco;
-    height: 400px;
-    margin-bottom: 20px;
+    grid-area: tres;
     margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
     width: 350px;
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+
+    div {
+      box-shadow: 0 3px 13px 1px rgb(0 0 0 / 16%);
+      padding: 10px;
+      border-radius: 10px;
+      width: 80%;
+    }
 
     img {
       width: 100%;
-      border-radius: 10px;
-    }
-
-    div {
-      width: 40%;
-      border: 1px solid lightblue;
-      padding: 8px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 50%;
     }
   }
   @media screen and (min-width: 750px) {
     width: 710px;
+
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
@@ -273,39 +254,42 @@ const HomeDivision5 = styled.div`
 
     img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 50%;
     }
 
     div {
-      border: 1px solid lightblue;
+      min-height: 420px;
+      box-shadow: 0 3px 13px 1px rgb(0 0 0 / 16%);
       border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
   }
 
   @media screen and (min-width: 1300px) {
     width: 1260px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     img {
       width: 100%;
+      border-radius: 50%;
     }
 
     div {
-      border: 1px solid lightblue;
+      box-shadow: 0 3px 13px 1px rgb(0 0 0 / 16%);
+      min-height: 560px;
+      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
   }
 `;
-const HomeDivision6 = styled.div`
-  /* border: 1px solid blue; */
-  grid-area: seis;
+const HomeDivision4 = styled.div`
+  grid-area: cuatro;
   @media screen and (min-width: 390px) {
     width: 350px;
-    margin-bottom: 20px;
+    margin-top: 30px;
   }
   @media screen and (min-width: 750px) {
     width: 710px;
@@ -317,17 +301,19 @@ const HomeDivision6 = styled.div`
 
 export const Parrafo = styled.p`
   @media screen and (min-width: 390px) {
+    line-height: 1.5;
     text-align: justify;
     color: darkblue;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 19px;
+    font-family: "Oswald";
+    font-weight: 200;
+    font-size: 25px;
     padding: 10px;
   }
   @media screen and (min-width: 750px) {
-    font-size: 22px;
+    font-size: 25px;
   }
   @media screen and (min-width: 1300px) {
-    font-size: 25px;
+    font-size: 30px;
   }
 `;
 

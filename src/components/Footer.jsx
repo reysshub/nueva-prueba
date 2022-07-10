@@ -21,23 +21,26 @@ export const FooterContainer = styled.div`
     width: 390px;
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
   @media screen and (min-width: 750px) {
     width: 750px;
     height: 90px;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   @media screen and (min-width: 1300px) {
     width: 1300px;
     height: 150px;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 `;
 export const FooterLogo = styled.div`
   @media screen and (min-width: 390px) {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
     img {
       border-radius: 10px;
       width: 150px;
