@@ -6,7 +6,7 @@ const BotonAppointment = () => {
     <BotonDiv>
       <BotonCita>
         <ConexionWeb href="https://www.valorcounselingllc.com/request/">
-          Appointment now
+          Schedule an Appointment
         </ConexionWeb>
       </BotonCita>
     </BotonDiv>
